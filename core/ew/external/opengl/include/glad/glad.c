@@ -22,7 +22,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <C:\Users\Logan\Desktop\Terrain Gen\Medieval-Terrain-Generator\core\ew\external\opengl\include\glad\glad.h>
+#include "glad.h"
 
 static void* get_proc(const char *namez);
 

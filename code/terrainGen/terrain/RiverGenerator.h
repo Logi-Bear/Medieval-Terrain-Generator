@@ -1,5 +1,5 @@
 #pragma once
-#include "world\World.h"
+#include "..\world\World.h"
 #include <vector>
 #include <queue>
 

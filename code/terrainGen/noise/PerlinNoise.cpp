@@ -64,7 +64,7 @@ float PerlinNoise::fractalNoise(float x, float y, int octaves, float lacunarity,
     float amplitude = 1.0f;
     float maxAmplitude = 0.0f;
 
-    for (int i = 1; i < octaves; i++) {
+    for (int i = 0; i < octaves; i++) {
         total += noise(x * frequency, y * frequency) * amplitude;
         maxAmplitude += amplitude;
 
@@ -94,5 +94,5 @@ float PerlinNoise::grad(int hash, float x, float y) {
     float u = h < 4 ? x : y;
     float v = h < 4 ? y : x;
 
-    return ((h & 1) ? -u : u) + ((h & 2) ? -2.0f * v : 2.0f * v);
+    return ((h & 1) ? -u : u) + ((h & 2) ? -v : v);
 }
