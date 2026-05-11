@@ -6,10 +6,9 @@
 
 // Constructors
 
-PerlinNoise::PerlinNoise() {
-    // Default seed
-    PerlinNoise(1);
+PerlinNoise::PerlinNoise() : PerlinNoise(1) {
 }
+
 
 PerlinNoise::PerlinNoise(unsigned int seed) {
     p.resize(256);

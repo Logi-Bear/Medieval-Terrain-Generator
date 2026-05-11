@@ -10,7 +10,7 @@ add_executable(${APPNAME}
     terrain/RiverGenerator.cpp
     roads/AntColony.cpp
     render/Renderer.cpp 
-    world/Tile.h "Constants.h" "terrain/BiomeUtils.h" "terrain/BiomeUtils.cpp")
+    world/Tile.h "Constants.h" "terrain/BiomeUtils.h" "terrain/BiomeUtils.cpp" "TerrainConfig.h")
 
 #Link + include dependencies
 target_link_libraries(${APPNAME} PUBLIC core IMGUI glm)

@@ -1,8 +1,9 @@
 #pragma once
 
 // Map size
-const int MAP_WIDTH = 256;
-const int MAP_HEIGHT = 256;
+const int MAP_WIDTH = 512;
+const int MAP_HEIGHT = 512;
+const float NOISE_SAMPLE_SCALE = 1.0f;
 
 // --- Noise Parameters ---
 const float HEIGHT_CONTINENT_SCALE = 2.2f;
@@ -43,7 +44,8 @@ const float VERY_WET_MOISTURE = 0.75f;
 
 // --- Lighting ---
 const float LIGHT_X = 1.0f;
-const float LIGHT_Y = 2.0f;
+const float LIGHT_Y = 0.5f;
 const float LIGHT_Z = 1.0f;
-const float SLOPE_SCALE = 12.0f;
-const float AMBIENT = 0.01f;
+const float SLOPE_SCALE = 13.0f;
+const float AMBIENT = 0.1f;
+const float BRIGHTNESS = 2.0f;
